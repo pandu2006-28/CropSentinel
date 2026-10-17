@@ -1,0 +1,13 @@
+Test ID,Area,Test,Method,Expected safe behaviour,Status,Evidence file
+T-001,Image quality,Blurred image,Feed blurred image or low blur metric,Request recapture,Planned,
+T-002,Image quality,Underexposed image,Feed dark image or low exposure metric,Request recapture,Planned,
+T-003,Decision policy,Low confidence,Use synthetic unit-test input,Human review,Unit test included,tests/test_decision.py
+T-004,Decision policy,Small class margin,Use ambiguous synthetic input,Human review,Unit test included,tests/test_decision.py
+T-005,Decision policy,Non-healthy class passes thresholds,Use synthetic unit-test input,Possible-disease warning with disclaimer,Unit test included,tests/test_decision.py
+T-006,Decision policy,Healthy class predicted,Use synthetic unit-test input,Do not claim disease absence,Unit test included,tests/test_decision.py
+T-007,Radio,Packet loss,Send numbered packets under controlled loss,Retry/pending state visible,Planned,
+T-008,Receiver,Restart with unacknowledged event,Power-cycle receiver,Pending event restored,Planned,
+T-009,Power,Average/peak current,Measure actual load and radio peaks,Record instrument/setup with observations,Planned,
+T-010,Power,Low battery,Use approved safe test method,Safe warning or shutdown,Planned,
+T-011,Enclosure,Ingress test,Document controlled test,Report actual outcome; no untested IP claim,Planned,
+T-012,End-to-end,Image to receiver alert,Run whole device/receiver path,Traceable event shown and ACK stored,Planned,

@@ -1,0 +1,28 @@
+Category,Component,Specification / purpose,Qty,Unit budget INR,Line total INR,Price / procurement note
+Field device,ESP32-S3 camera development board,Camera-capable board with PSRAM and compatible camera,1,1800,1800,Estimate; confirm exact board and inference compatibility
+Field device,BME280 temperature/humidity sensor,Environmental context sensor breakout,1,450,450,"Estimate; context only, not disease proof"
+Field device,"LoRa radio module, antenna and interface",SX1262-class compatible radio set; verify legal band and receiver match,1,2500,2500,Estimate; exact radio SKU/frequency to verify
+Field device,20 W solar panel,Initial sizing assumption; validate against measured load,1,2200,2200,Estimate; final panel sizing needs power budget
+Field device,Rechargeable battery pack,Chemistry/capacity chosen with compatible charger,1,3500,3500,Estimate; do not procure before chemistry is selected
+Field device,Solar charge controller,Compatible with selected battery chemistry,1,1800,1800,Estimate; verify panel/battery compatibility
+Field device,DC-DC voltage regulators,Regulated rails for MCU/radio/sensors,1,900,900,Estimate; check peak radio current
+Field device,"Battery protection, fuse and switch","Fuse, holder, switch and suitable protection",1,1000,1000,Estimate; electrical safety review needed
+Field device,Weather-resistant enclosure and cable glands,"Gasketed enclosure, glands and mounting allowance",1,2200,2200,Estimate; IP rating not claimed until tested
+Field device,"Prototype PCB, wiring and connectors","Prototype PCB/perfboard, headers, terminals and connectors",1,1800,1800,Estimate; include strain relief
+Farmer-side receiver,Receiver controller and compatible LoRa radio,Direct point-to-point LoRa receiver board,1,3000,3000,Estimate; must match field node radio/protocol
+Farmer-side receiver,OLED/LCD display,Display alert state and event ID,1,800,800,Estimate; select after interface review
+Farmer-side receiver,"Buzzer, indicator LEDs and ACK button",Audio/visual alert and acknowledgement input,1,600,600,Estimate; ACK is not proof of plant inspection
+Farmer-side receiver,"Receiver enclosure, power supply and cables",Housing and low-voltage power,1,1600,1600,Estimate
+Development accessories,Spare/debug development board,"Second board for bring-up, debug or reserve",1,1800,1800,Estimate
+Development accessories,"USB cables, storage, adapters and test accessories",Small development accessories and consumables,1,1200,1200,Estimate
+Testing and validation,Multimeter or power-measurement tools,Basic measurement tools for power/continuity,1,1800,1800,Estimate; exact instrument to verify
+Testing and validation,"Mounting brackets, weatherproofing and fasteners",Prototype mounting supplies,1,1800,1800,Estimate; no environmental certification implied
+Testing and validation,"Plant image collection, labeling and data storage allowance",Collection/labeling materials and storage,1,2500,2500,"Planning allowance; use traceable, permitted data"
+Testing and validation,Field-like testing and local travel allowance,Supervised test activity allowance,1,3000,3000,Planning allowance; no trials claimed yet
+Replacement spares,Replacement ESP32-S3 camera board,Replacement candidate,1,1200,1200,Reserve estimate; buy only if needed
+Replacement spares,Replacement BME280 sensor,Replacement sensor,1,450,450,Reserve estimate; buy only if needed
+Replacement spares,Replacement LoRa module/antenna,Replacement radio set,1,1800,1800,Reserve estimate; match selected module/band
+Replacement spares,"Spare regulators, wires and connectors",Common small replacement parts,1,1550,1550,Reserve estimate
+Demo and documentation,"Demo setup, labels and documentation materials","Demo labels, cable management and presentation supplies",1,1250,1250,Planning allowance; optional
+Logistics allowance,"Shipping, taxes and delivery allowance",Provisional across purchases; replace with checkout totals,1,4000,4000,Allowance only; not a supplier quote
+Emergency contingency,Unallocated reserve for damage or unexpected expenses,Held back unless required,1,3500,3500,Reserve; not a mandatory purchase

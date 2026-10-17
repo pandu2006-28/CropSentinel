@@ -1,0 +1,14 @@
+flowchart LR
+    A[Camera capture] --> B[Image-quality gate]
+    B -->|Poor image| C[Request recapture]
+    B -->|Usable image| D[Edge classifier]
+    D --> E[Trust-aware decision policy]
+    E -->|Uncertain| F[Human review / re-observe]
+    E -->|Possible disease| G[Alert packet]
+    E -->|Healthy class predicted| H[Record limited-confidence observation]
+    G --> I[Direct LoRa link]
+    I --> J[Farmer-side receiver]
+    J --> K[Display + buzzer/LED]
+    K --> L[User ACK]
+    M[Environmental sensor] -. Context only until validated .-> E
+    N[Event store + retry policy] <--> J
